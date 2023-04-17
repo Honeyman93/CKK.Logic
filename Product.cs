@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CKK.Logic
+{
+    internal class Product
+    {
+        private int _id;
+        private string _name;
+        private decimal _price;
+
+         public Product(int id, string name, decimal price)
+        {
+            _id = id;
+            _name = name;
+            _price = price;
+        }
+
+        public int GetId(string name)
+        {
+            return _id;
+        }
+
+        public void SetId(int id)
+        {
+            _id = id;
+        }
+        public string GetName()
+        {
+            return _name;
+        }
+        public void SetName(string name)
+        {
+            _name = name;
+        }
+
+        public decimal GetPrice()
+        {
+            return _price;
+        }
+        public void SetPrice(decimal price)
+        {
+            _price = price;
+        }
+    }
+}
